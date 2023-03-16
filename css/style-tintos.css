@@ -254,7 +254,8 @@ header label {
     width: 50vw;
     height: 30vw;
     border-radius: 10px;
-    background-image: url(/img/Viñedos\ II.jpg);
+    /* background-image: url(/img/Viñedos\ II.jpg); */
+    background-image: url(/img/Viñedos-Dragones.jpg);
     background-size: 145%;
     animation: san-juan-vinedos 10s infinite linear alternate;
     margin-bottom: 45px;
