@@ -132,12 +132,34 @@ label {
 }
 
 .formulario {
-    white-space: auto;
     height: 83%;
 }
 
 .enviar{
     white-space: normal;
+    height: 30px;
+    width: 375px;
+    margin: auto;
+}
+
+.select{
+    font-size: large;
+    text-align: center;
+}
+
+.botones{
+    height: inherit;
+    cursor:pointer;
+    margin: 2px;
+    width: 95px;
+    border-radius: 5px;
+    border: 1px solid #a7976d;
+}
+
+.botones:hover{
+    background: rgb(153, 41, 29);
+    transform: scale(1.1);
+    color:#F9F9F9
 }
 
 /*--------- FOOTER -----------------------------------------*/

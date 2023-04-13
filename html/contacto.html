@@ -48,10 +48,10 @@
                     <input type="email" class="campos-form" name="email" required placeholder="email@dominio.com">
 
                     <label for="telefono" class="datos-form">Ingrese Telefono de Contacto:</label>
-                    <input type="tel" class="campos-form" size="15" maxlength="8" id="tel" name="tel" required placeholder="+(xx) xx xxx xxxx">
+                    <input type="tel" class="campos-form" size="15" maxlength="14" id="tel" name="tel" required placeholder="+(xx) xx xxx xxxx">
 
                     <label for="motivoconsulta" class="datos-form">Motivo de la Consulta:</label>                    
-                    <select name="consulta" id="mconsulta">
+                    <select class="select" name="consulta" id="mconsulta">
                         <option value="0">Seleccione</option>   
                         <option value="1">Precios</option>   
                         <option value="2">Vinos y Espumantes disponibles</option>   
@@ -63,8 +63,8 @@
                     <textarea cols="50" rows="10" name="comentario" placeholder="Escriba su comentario"></textarea>
 
                     <section class="enviar">
-                        <input type="submit" id="b1" value="Enviar datos" onclick="checkEnviar()">
-                        <input type="reset" value="Borrar datos">    
+                        <input class="botones" type="submit" id="b1" value="Enviar datos" onclick="checkEnviar()">
+                        <input class="botones" type="reset" value="Borrar datos">    
                     </section>
                 </form>
             </div>   
