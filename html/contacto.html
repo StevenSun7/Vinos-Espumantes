@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Vinos-Espumantes/css/moviles.css">
-    <link rel="stylesheet" href="/Vinos-Espumantes/css/style-contacto.css">
-    <link rel="shortcut icon" href="/Vinos-Espumantes/favicon/grapes.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/moviles.css">
+    <link rel="stylesheet" href="/css/style-contacto.css">
+    <link rel="shortcut icon" href="/favicon/grapes.ico" type="image/x-icon">
 
     <title>Contacto</title>
 </head>
@@ -15,15 +15,15 @@
 <header>
     <input type="checkbox" id="btn-menu">
     <div class="header">
-        <label for="btn-menu"><img src="/Vinos-Espumantes/img/Copa Blanca.png" alt="" width="30px" height="30px" id="fotoBtn"></label>
+        <label for="btn-menu"><img src="/img/Copa Blanca.png" alt="" width="30px" height="30px" id="fotoBtn"></label>
         <div class="div-menu">
             <div class="Logo">
-                <a href="/Vinos-Espumantes/index.html"><img src="/Vinos-Espumantes/img/Grapes White II.png" alt="Uvas" class="UvasLogo"></a>
+                <a href="/index.html"><img src="/img/Grapes White II.png" alt="Uvas" class="UvasLogo"></a>
             </div>
-            <div class="html-menu"><a href="/Vinos-Espumantes/html/tintos.html">Tintos</a></div>
-            <div class="html-menu"><a href="/Vinos-Espumantes/html/blancos.html">Blancos</a></div>
-            <div class="html-menu"><a href="/Vinos-Espumantes/html/espumantes.html">Espumantes</a></div>
-            <div class="html-menu"><a href="/Vinos-Espumantes/html/contacto.html">Contacto</a></div>
+            <div class="html-menu"><a href="/html/tintos.html">Tintos</a></div>
+            <div class="html-menu"><a href="/html/blancos.html">Blancos</a></div>
+            <div class="html-menu"><a href="/html/espumantes.html">Espumantes</a></div>
+            <div class="html-menu"><a href="/html/contacto.html">Contacto</a></div>
         </div>
     </div>
 </header>
@@ -39,41 +39,48 @@
                 <form name="comprobacion">
                     <legend></legend>
                     <label for="apellido" class="datos-form">Apellido: </label>
-                    <p><input type="text" size=auto id="apellido" name="apellido" placeholder="Ingrese su Apellido ..."></p>
+                    <input type="text" class="campos-form" size=auto id="apellido" name="apellido" required placeholder="Ingrese su Apellido ...">
+
                     <label for="nombre" class="datos-form">Nombre:</label>            
-                    <p><input type="text" size=auto id="nombre" name="nombre" placeholder="Ingrese su Nombre ..."></p>
+                    <input type="text" class="campos-form" size=auto id="nombre" name="nombre" required placeholder="Ingrese su Nombre ...">
+
                     <label for="email" class="datos-form">Mail de contacto:</label>
-                    <p><input type="email" name="email" placeholder="Ingrese un Mail"></p>
+                    <input type="email" class="campos-form" name="email" required placeholder="email@dominio.com">
+
                     <label for="telefono" class="datos-form">Ingrese Telefono de Contacto:</label>
-                    <p><input type="tel" size="15" maxlength="8" id="tel" name="tel" placeholder="+(54) 11 XXX XXXX)"></p>
+                    <input type="tel" class="campos-form" size="15" maxlength="8" id="tel" name="tel" required placeholder="+(xx) xx xxx xxxx">
+
                     <label for="motivoconsulta" class="datos-form">Motivo de la Consulta:</label>                    
-                    <select name="consulta" id="#mconsulta">
+                    <select name="consulta" id="mconsulta">
                         <option value="0">Seleccione</option>   
                         <option value="1">Precios</option>   
-                        <option value="2">Bodegas disponibles</option>   
+                        <option value="2">Vinos y Espumantes disponibles</option>   
                         <option value="3">Informacion General</option>   
-                        <option value="4">Solicitar contacto</option>   
+                        <option value="4">Solicitar contacto directo</option>   
                     </select>
-                    <label for="conmentarios" class="datos-form">Deje sus comentarios:</label><br> 
-                    <textarea cols="40" rows="5" name="comentario" placeholder="Escriba su comentario"></textarea>
+
+                    <label for="conmentarios" class="datos-form">Deje sus comentarios:</label>
+                    <textarea cols="50" rows="10" name="comentario" placeholder="Escriba su comentario"></textarea>
+
                     <section class="enviar">
-                        <input type="button" id="b1" value="Enviar datos" onclick="checkEnviar()">
+                        <input type="submit" id="b1" value="Enviar datos" onclick="checkEnviar()">
                         <input type="reset" value="Borrar datos">    
                     </section>
                 </form>
             </div>   
+
         </main>
         <footer class="footer">
             <div class="div-redes">
-                <a href="https://www.instagram.com" target="_blank"><img src="/Vinos-Espumantes/img/Instagram II.png" alt="Instagram" class="logo-instagram">Instagram</a><br>
-                <a href="https://github.com/StevenSun7/Espumantes-Vinos.git" target="_blank"><img src="/Vinos-Espumantes/img/GitHub IV.png" alt="GitHub" class="logo-github">GitHub</a><br>
-                <a href="https://twitter.com/i/flow/login" target="_blank"><img src="/Vinos-Espumantes/img/Twitter II.png" alt="Twitter" class="logo-twitter">Twitter</a><br>
-                <a href="https://www.facebook.com" target="_blank"><img src="/Vinos-Espumantes/img/Facebook I.png" alt="Facebook" class="logo-facebook">Facebook</a>
+                <a href="https://www.instagram.com" target="_blank"><img src="/img/Instagram II.png" alt="Instagram" class="logo-instagram">Instagram</a><br>
+                <a href="https://github.com/StevenSun7/Espumantes-Vinos.git" target="_blank"><img src="/img/GitHub IV.png" alt="GitHub" class="logo-github">GitHub</a><br>
+                <a href="https://twitter.com/i/flow/login" target="_blank"><img src="/img/Twitter II.png" alt="Twitter" class="logo-twitter">Twitter</a><br>
+                <a href="https://www.facebook.com" target="_blank"><img src="/img/Facebook I.png" alt="Facebook" class="logo-facebook">Facebook</a>
             </div>
             <br>
             <div class="div-derechos"><p class="derechos">BEBER CON MODERACION | Prohibida la venta a menores de 18 años | Copyright © Septiembre 2022 | Todos los derechos reservados. | V4.0</p></div>
         </footer>
     </div>
-    <script src="/Vinos-Espumantes/js/Corrobora.js"></script>
+    <script src="/js/Corrobora.js"></script>
 </body>
 </html>
