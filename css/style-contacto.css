@@ -152,7 +152,7 @@ label {
     cursor:pointer;
     margin: 2px;
     width: 95px;
-    border-radius: 5px;
+    border-radius: 7px;
     border: 1px solid #a7976d;
 }
 
@@ -297,6 +297,10 @@ label {
 
     .formulario {
         width: 97%;
+    }
+
+    .botones{
+        border-radius: 2px;
     }
 
     .div-derechos {
