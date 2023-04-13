@@ -154,12 +154,13 @@ label {
     width: 95px;
     border-radius: 7px;
     border: 1px solid #a7976d;
+    font-size: 14px;
 }
 
 .botones:hover{
     background: rgb(153, 41, 29);
     transform: scale(1.1);
-    color:#F9F9F9
+    color:#a7976d
 }
 
 /*--------- FOOTER -----------------------------------------*/
