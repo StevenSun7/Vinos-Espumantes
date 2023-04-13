@@ -300,6 +300,10 @@ label {
         width: 97%;
     }
 
+    .select{
+        font-size: 13px;
+    }
+
     .botones{
         border-radius: 2px;
     }
