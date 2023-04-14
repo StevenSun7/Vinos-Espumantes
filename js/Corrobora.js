@@ -7,17 +7,17 @@
         function checkEnviar() {
             //valido el nombre
             if (document.comprobacion.apellido.value.length  == 0) {
-                alert("Ingrese su apellido por favor")
+                alert("Por favor ingrese apellido.")
                 document.comprobacion.apellido.focus()
                 return 0
             }
             if (document.comprobacion.nombre.value.length  == 0) {
-                alert("Ingrese su nombre")
+                alert("Por favor ingrese nombre.")
                 document.comprobacion.nombre.focus()
                 return 0
             }
             if (document.comprobacion.email.value.length  == 0) {
-                alert("Ingrese su E-Mail para contactarnos")
+                alert("Por favor ingrese e-mail.")
                 document.comprobacion.email.focus()
                 return 0
             }
@@ -33,7 +33,7 @@
                 document.comprobacion.consulta.focus()
                 return 0
             }
-            alert("Muchas gracias por enviar el formulario")
+            alert("El formulario se envió con éxito. Muchas Gracias!")
             document.comprobacion.submit()
         }
         
