@@ -79,13 +79,11 @@ header label {
 }
 
 .banner-burbujas {
-    margin-top: 3rem;
     height: 100%;
 }
 
 .video-burbujas {
     display: flex;
-    padding-top: 13rem;
     width: 100%;
     background-image: url(/videos/Burbujas.mov);
     border-bottom: solid 1px #a7976d;
