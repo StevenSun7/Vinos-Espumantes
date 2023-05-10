@@ -85,7 +85,6 @@ header label {
 .video-burbujas {
     display: flex;
     width: 100%;
-    background-image: url(/videos/Burbujas.mov);
     border-bottom: solid 1px #a7976d;
     justify-content: center;
 }
